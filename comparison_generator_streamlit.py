@@ -40,7 +40,7 @@ print(f"offline_mode: {offline_mode}")
 logging.info(f"offline_mode: {offline_mode}")
 
 
-offline_message="This feature is disabled in offline mode. Host this application locally with your own API keys to try it out live! Contact luca.stamatescu@microsoft.com for information."
+offline_message="此功能在离线模式下被禁用。请在本地托管此应用程序并使用您自己的 API 密钥进行实时尝试！联系 luca.stamatescu@microsoft.com 了解更多信息。"
 
 # Function to read XML file content as a string  
 def load_use_case_from_file(file_path):  
@@ -276,7 +276,7 @@ def main():
                 # Use st.text_area for the description with a unique key  
                 col.text_area("Description", description, height=100, key=f"description_{i}")  
 
-    st.set_page_config(page_title="Azure OpenAI Studio Experimental Lab | GPT-4o vs 4o Comparison tool",page_icon="./favicon.ico", layout="wide")
+    st.set_page_config(page_title="Azure OpenAI Studio 实验室 | GPT-4o 与 4o 比较工具",page_icon="./favicon.ico", layout="wide")
     selected_item = st.sidebar.empty()
 
     def set_selected_item(item):
@@ -288,7 +288,7 @@ def main():
 
     # Place the title in the first column
     with col1:
-        st.title("Azure OpenAI Experimental Lab 🔬")
+        st.title("Azure OpenAI 实验室 🔬")
 
     # Place the image in the second column
     with col2:
@@ -296,7 +296,7 @@ def main():
         st.text("")
         st.image("./azureopenaistudio.png", width=50)
  
-    st.sidebar.subheader("GPT-4o vs o1-preview comparison tool") 
+    st.sidebar.subheader("GPT-4o 与 o1-preview 比较工具") 
 
     st.sidebar.markdown("---")  
 
@@ -324,130 +324,130 @@ def main():
     
     
     # Insurance section
-    st.sidebar.header("Insurance")  
-    if st.sidebar.button("Home Insurance Claim ⭐️", key="insurance_1"):
-        set_selected_item("Home Insurance Claim")
-    if st.sidebar.button("Auto Insurance Claim ⭐️", key="insurance_2"):
-        set_selected_item("Auto Insurance Claim")
-    if st.sidebar.button("Customer Service and Retention", key="insurance_3"):
-        set_selected_item("Customer Service and Retention")
-    if st.sidebar.button("Product Development and Innovation", key="insurance_4"):
-        set_selected_item("Product Development and Innovation")
-    if st.sidebar.button("Risk Management and Compliance", key="insurance_5"):
-        set_selected_item("Risk Management and Compliance")
+    st.sidebar.header("保险")  
+    if st.sidebar.button("家庭保险索赔 ⭐️", key="insurance_1"):
+        set_selected_item("家庭保险索赔")
+    if st.sidebar.button("汽车保险索赔 ⭐️", key="insurance_2"):
+        set_selected_item("汽车保险索赔")
+    if st.sidebar.button("客户服务和保留", key="insurance_3"):
+        set_selected_item("客户服务和保留")
+    if st.sidebar.button("产品开发和创新", key="insurance_4"):
+        set_selected_item("产品开发和创新")
+    if st.sidebar.button("风险管理和合规", key="insurance_5"):
+        set_selected_item("风险管理和合规")
     st.sidebar.markdown("---")  
 
     # Banking section
-    st.sidebar.header("Banking")  
-    if st.sidebar.button("Credit Risk Assessment and Management ⭐️", key="banking_1"):
-        set_selected_item("Credit Risk Assessment and Management")
-    if st.sidebar.button("Fraud Detection and Prevention", key="banking_2"):
-        set_selected_item("Fraud Detection and Prevention")
-    if st.sidebar.button("Regulatory Compliance and Reporting", key="banking_3"):
-        set_selected_item("Regulatory Compliance and Reporting")
-    if st.sidebar.button("Customer Relationship Management", key="banking_4"):
-        set_selected_item("Customer Relationship Management")
-    if st.sidebar.button("Investment and Portfolio Management", key="banking_5"):
-        set_selected_item("Investment and Portfolio Management")
+    st.sidebar.header("银行")  
+    if st.sidebar.button("信用风险评估和管理 ⭐️", key="banking_1"):
+        set_selected_item("信用风险评估和管理")
+    if st.sidebar.button("欺诈检测和预防", key="banking_2"):
+        set_selected_item("欺诈检测和预防")
+    if st.sidebar.button("合规和报告", key="banking_3"):
+        set_selected_item("合规和报告")
+    if st.sidebar.button("客户关系管理", key="banking_4"):
+        set_selected_item("客户关系管理")
+    if st.sidebar.button("投资和投资组合管理", key="banking_5"):
+        set_selected_item("投资和投资组合管理")
     st.sidebar.markdown("---") 
 
     # Retail section
-    st.sidebar.header("Retail")  
-    if st.sidebar.button("Inventory and Supply Chain Management", key="retail_1"):
-        set_selected_item("Inventory and Supply Chain Management")
-    if st.sidebar.button("Merchandising and Pricing", key="retail_2"):
-        set_selected_item("Merchandising and Pricing")
-    if st.sidebar.button("Customer Segmentation and Personalization", key="retail_3"):
-        set_selected_item("Customer Segmentation and Personalization")
-    if st.sidebar.button("Omnichannel and E-commerce", key="retail_4"):
-        set_selected_item("Omnichannel and E-commerce")
-    if st.sidebar.button("Loyalty and Retention", key="retail_5"):
-        set_selected_item("Loyalty and Retention")
+    st.sidebar.header("零售")  
+    if st.sidebar.button("库存和供应链管理", key="retail_1"):
+        set_selected_item("库存和供应链管理")
+    if st.sidebar.button("商品和定价", key="retail_2"):
+        set_selected_item("商品和定价")
+    if st.sidebar.button("客户细分和个性化", key="retail_3"):
+        set_selected_item("客户细分和个性化")
+    if st.sidebar.button("全渠道和电子商务", key="retail_4"):
+        set_selected_item("全渠道和电子商务")
+    if st.sidebar.button("忠诚度和保留", key="retail_5"):
+        set_selected_item("忠诚度和保留")
     st.sidebar.markdown("---")  
 
 
 
     # Utilities section
-    st.sidebar.header("Utilities")  
-    if st.sidebar.button("Demand and Supply Management", key="utilities_1"):
-        set_selected_item("Demand and Supply Management")
-    if st.sidebar.button("Asset and Network Management", key="utilities_2"):
-        set_selected_item("Asset and Network Management")
-    if st.sidebar.button("Customer Service and Billing", key="utilities_3"):
-        set_selected_item("Customer Service and Billing")
-    if st.sidebar.button("Energy Efficiency and Sustainability", key="utilities_4"):
-        set_selected_item("Energy Efficiency and Sustainability")
-    if st.sidebar.button("Regulatory Compliance and Reporting", key="utilities_5"):
-        set_selected_item("Regulatory Compliance and Reporting")
+    st.sidebar.header("公用事业")  
+    if st.sidebar.button("需求和供应管理", key="utilities_1"):
+        set_selected_item("需求和供应管理")
+    if st.sidebar.button("资产和网络管理", key="utilities_2"):
+        set_selected_item("资产和网络管理")
+    if st.sidebar.button("客户服务和计费", key="utilities_3"):
+        set_selected_item("客户服务和计费")
+    if st.sidebar.button("能源效率和可持续性", key="utilities_4"):
+        set_selected_item("能源效率和可持续性")
+    if st.sidebar.button("合规和报告", key="utilities_5"):
+        set_selected_item("合规和报告")
     st.sidebar.markdown("---")  
 
     # Mining section
-    st.sidebar.header("Mining")  
-    if st.sidebar.button("Exploration and Feasibility", key="mining_1"):
-        set_selected_item("Exploration and Feasibility")
-    if st.sidebar.button("Mine Planning and Design", key="mining_2"):
-        set_selected_item("Mine Planning and Design")
-    if st.sidebar.button("Production and Processing", key="mining_3"):
-        set_selected_item("Production and Processing")
-    if st.sidebar.button("Environmental and Social Impact", key="mining_4"):
-        set_selected_item("Environmental and Social Impact")
-    if st.sidebar.button("Health and Safety", key="mining_5"):
-        set_selected_item("Health and Safety")
+    st.sidebar.header("采矿")  
+    if st.sidebar.button("勘探和可行性", key="mining_1"):
+        set_selected_item("勘探和可行性")
+    if st.sidebar.button("矿山规划和设计", key="mining_2"):
+        set_selected_item("矿山规划和设计")
+    if st.sidebar.button("生产和加工", key="mining_3"):
+        set_selected_item("生产和加工")
+    if st.sidebar.button("环境和社会影响", key="mining_4"):
+        set_selected_item("环境和社会影响")
+    if st.sidebar.button("健康和安全", key="mining_5"):
+        set_selected_item("健康和安全")
     st.sidebar.markdown("---")  
 
     # Telecommunications section
-    st.sidebar.header("Telecommunications")  
-    if st.sidebar.button("Network Planning and Optimization", key="telecom_1"):
-        set_selected_item("Network Planning and Optimization")
-    if st.sidebar.button("Service Development and Innovation", key="telecom_2"):
-        set_selected_item("Service Development and Innovation")
-    if st.sidebar.button("Customer Acquisition and Retention", key="telecom_3"):
-        set_selected_item("Customer Acquisition and Retention")
-    if st.sidebar.button("Billing and Revenue Management", key="telecom_4"):
-        set_selected_item("Billing and Revenue Management")
-    if st.sidebar.button("Regulatory Compliance and Reporting", key="telecom_5"):
-        set_selected_item("Regulatory Compliance and Reporting")
+    st.sidebar.header("电信")  
+    if st.sidebar.button("网络规划和优化", key="telecom_1"):
+        set_selected_item("网络规划和优化")
+    if st.sidebar.button("服务开发和创新", key="telecom_2"):
+        set_selected_item("服务开发和创新")
+    if st.sidebar.button("客户获取和保留", key="telecom_3"):
+        set_selected_item("客户获取和保留")
+    if st.sidebar.button("计费和收入管理", key="telecom_4"):
+        set_selected_item("计费和收入管理")
+    if st.sidebar.button("合规和报告", key="telecom_5"):
+        set_selected_item("合规和报告")
     st.sidebar.markdown("---")  
 
     # Healthcare section
-    st.sidebar.header("Healthcare")  
-    if st.sidebar.button("Diagnosis and Treatment", key="healthcare_1"):
-        set_selected_item("Diagnosis and Treatment")
-    if st.sidebar.button("Care Coordination and Management", key="healthcare_2"):
-        set_selected_item("Care Coordination and Management")
-    if st.sidebar.button("Disease Prevention and Health Promotion", key="healthcare_3"):
-        set_selected_item("Disease Prevention and Health Promotion")
-    if st.sidebar.button("Research and Innovation", key="healthcare_4"):
-        set_selected_item("Research and Innovation")
-    if st.sidebar.button("Compliance and Reporting", key="healthcare_5"):
-        set_selected_item("Compliance and Reporting")
+    st.sidebar.header("医疗保健")  
+    if st.sidebar.button("诊断和治疗", key="healthcare_1"):
+        set_selected_item("诊断和治疗")
+    if st.sidebar.button("护理协调和管理", key="healthcare_2"):
+        set_selected_item("护理协调和管理")
+    if st.sidebar.button("疾病预防和健康促进", key="healthcare_3"):
+        set_selected_item("疾病预防和健康促进")
+    if st.sidebar.button("研究和创新", key="healthcare_4"):
+        set_selected_item("研究和创新")
+    if st.sidebar.button("合规和报告", key="healthcare_5"):
+        set_selected_item("合规和报告")
     st.sidebar.markdown("---")  
 
     # Education section
-    st.sidebar.header("Education")  
-    if st.sidebar.button("Curriculum Design and Delivery", key="education_1"):
-        set_selected_item("Curriculum Design and Delivery")
-    if st.sidebar.button("Assessment and Evaluation", key="education_2"):
-        set_selected_item("Assessment and Evaluation")
-    if st.sidebar.button("Student Support and Engagement", key="education_3"):
-        set_selected_item("Student Support and Engagement")
-    if st.sidebar.button("Professional Development and Collaboration", key="education_4"):
-        set_selected_item("Professional Development and Collaboration")
-    if st.sidebar.button("Administration and Management", key="education_5"):
-        set_selected_item("Administration and Management")
+    st.sidebar.header("教育")  
+    if st.sidebar.button("课程设计和交付", key="education_1"):
+        set_selected_item("课程设计和交付")
+    if st.sidebar.button("评估和评价", key="education_2"):
+        set_selected_item("评估和评价")
+    if st.sidebar.button("学生支持和参与", key="education_3"):
+        set_selected_item("学生支持和参与")
+    if st.sidebar.button("专业发展和协作", key="education_4"):
+        set_selected_item("专业发展和协作")
+    if st.sidebar.button("管理和管理", key="education_5"):
+        set_selected_item("管理和管理")
     st.sidebar.markdown("---")  
 
     
     if 'selected_title' not in st.session_state or not st.session_state['selected_title']:
-        st.markdown("### Overview")
-        st.markdown("This tool is designed to help you explore the differences between OpenAI's o1-preview model, and the GPT-4o model. o1 is a new class of model which unlocks advanced reasoning capabilities for LLMs. By spending more time upfront thinking about the problem, o1 considers a range of edge cases and potential situations to arrive at a much better conclusion. This comes at the cost of latency.\n o1 is poised to transform many industries, and this tool is set up to let you explore these.")
-        st.markdown("### Instructions")
-        st.markdown("Click on a scenario on the left to get started. You can also upload your own scenario by selecting 'Custom Scenario'.")
+        st.markdown("### 概述")
+        st.markdown("此工具旨在帮助您探索 OpenAI 的 o1-preview 模型和 GPT-4o 模型之间的差异。o1 是一种新型模型，能够为 LLM 解锁高级推理能力。通过在前期花费更多时间思考问题，o1 考虑了一系列边缘情况和潜在情况，从而得出更好的结论。这是以延迟为代价的。\n o1 有望改变许多行业，此工具旨在让您探索这些行业。")
+        st.markdown("### 使用说明")
+        st.markdown("点击左侧的场景以开始。您还可以通过选择“自定义场景”来上传您自己的场景。")
         if offline_mode=='true':
-            st.markdown("### ⚠️Offline Mode⚠️")
-            st.markdown("This tool is currently running in offline mode. You are still able to explore and run all the scenarios, showcasing the behaviour of GPT-4o and o1. However, you won't be able to modify the prompts, upload files or add your own custom scenarios. To try it out live, host this application locally with your own API keys. Contact Luca.Stamatescu@microsoft.com for further information.")
-        st.markdown("### Attribution")
-        st.markdown("Please contact Luca Stamatescu for further information regarding this demo. Thank you to Salim Naim for developing the prompting strategy and Ibrahim Hamza for the industry scenarios and use cases.")
+            st.markdown("### ⚠️离线模式⚠️")
+            st.markdown("此工具当前在离线模式下运行。您仍然可以探索和运行所有场景，展示 GPT-4o 和 o1 的行为。但是，您将无法修改提示、上传文件或添加您自己的自定义场景。要实时尝试，请在本地托管此应用程序并使用您自己的 API 密钥。联系 Luca.Stamatescu@microsoft.com 了解更多信息。")
+        st.markdown("### 归属")
+        st.markdown("请联系 Luca Stamatescu 以获取有关此演示的更多信息。感谢 Salim Naim 开发提示策略和 Ibrahim Hamza 提供行业场景和用例。")
     else:
         # Main content
         st.title(st.session_state.get("selected_title", "Custom Scenario"))
@@ -473,13 +473,13 @@ def main():
 
 
 
-        st.markdown("##### High level overview")
+        st.markdown("##### 高级概述")
         overview = get_csv_data(selected_use_case,"Overview")
 
         st.markdown(overview)
 
 
-        st.markdown("##### Detailed breakdown")
+        st.markdown("##### 详细分析")
         # Get the default input based on the selected use case
         default_input = get_csv_data(selected_use_case,"Prompt")
 
@@ -488,7 +488,7 @@ def main():
         user_input = st.text_area("", value=default_input, height=200)    
 
         # Section to upload supporting documents
-        st.markdown("##### Upload Supporting Documents")
+        st.markdown("##### 上传支持文档")
         
         # Use session state to store uploaded files and the uploader key
         if 'uploaded_files' not in st.session_state:
@@ -497,10 +497,10 @@ def main():
             st.session_state.uploader_key = str(randint(1000, 100000000))
         
         # File uploader with a unique key
-        uploaded_files = st.file_uploader("Choose images or PDFs", accept_multiple_files=True, type=["jpeg", "pdf"])
+        uploaded_files = st.file_uploader("选择图像或 PDF", accept_multiple_files=True, type=["jpeg", "pdf"])
         
         # Button to delete uploaded files
-        if st.button("Delete uploaded files"):
+        if st.button("删除上传的文件"):
             if offline_mode == 'true':
                 st.toast(offline_message, icon="⚠️")
             else:
@@ -510,7 +510,7 @@ def main():
             
 
         # Process uploaded files
-        if uploaded_files and st.button("Upload Files"):
+        if uploaded_files and st.button("上传文件"):
             if offline_mode == 'true':
                 st.toast(offline_message, icon="⚠️")
             else:
@@ -523,11 +523,11 @@ def main():
             render_images_and_descriptions()
     
         # Add a checkbox to toggle the comparison
-        compare_models = st.checkbox("Show only o1-preview output", value=False)
+        compare_models = st.checkbox("仅显示 o1-preview 输出", value=False)
       
         # Button to submit    
         if st.button("Submit"): 
-            with st.spinner('Processing...'):
+            with st.spinner('处理中...'):
                 if st.session_state['descriptions']:  
                     # Ensure descriptions is a string
                     concatenated_descriptions=""
@@ -547,20 +547,20 @@ def main():
                 
                 if not compare_models:
                     with col1:    
-                        st.subheader("4o Response")
+                        st.subheader("4o 响应")
                         st.markdown("---")
                         response_placeholder_4o = st.empty()  
                         st.markdown("---")
-                        st.markdown("##### Timing")    
-                        time_placeholder_4o = st.markdown("Processing...")   
+                        st.markdown("##### 时间")    
+                        time_placeholder_4o = st.markdown("处理中...")   
         
                 with col2:    
-                    st.subheader("o1-preview Response")   
+                    st.subheader("o1-preview 响应")   
                     st.markdown("---")
                     response_placeholder_o1 = st.empty() 
                     st.markdown("---")
-                    st.markdown("##### Timing")   
-                    time_placeholder_o1 = st.markdown("Processing...")   
+                    st.markdown("##### 时间")   
+                    time_placeholder_o1 = st.markdown("处理中...")   
                 
                 # Dictionary to store results    
                 result_dict = {}    
@@ -590,7 +590,7 @@ def main():
                 if not compare_models:
                     with col1:
                         response_placeholder_4o.write(result_dict['4o']['response'])  
-                        time_placeholder_4o.write(f"Elapsed time: {result_dict['4o']['time']:.2f} seconds")  
+                        time_placeholder_4o.write(f"耗时: {result_dict['4o']['time']:.2f} 秒")  
                         if os.getenv('debug_mode') == 'true':
                             save_csv_data(selected_use_case, "gpt4o_time", float(round(result_dict['4o']['time'],2)))
                             save_csv_data(selected_use_case, "gpt4o", result_dict['4o']['response'])
@@ -599,7 +599,7 @@ def main():
                 # Display the O1 response and elapsed time    
                 with col2:    
                     response_placeholder_o1.write(result_dict['o1']['response'])   
-                    time_placeholder_o1.write(f"Elapsed time: {result_dict['o1']['time']:.2f} seconds")    
+                    time_placeholder_o1.write(f"耗时: {result_dict['o1']['time']:.2f} 秒")    
                     if os.getenv('debug_mode') == 'true':
                         save_csv_data(selected_use_case, "o1_time", float(round(result_dict['o1']['time'],2)))
                         save_csv_data(selected_use_case, "o1", result_dict['o1']['response'])
@@ -607,9 +607,9 @@ def main():
             if not compare_models:
                 st.markdown("---")
                 # Compare the responses and display the comparison  
-                st.subheader("Comparison of Responses - Overview")  
+                st.subheader("响应比较 - 概述")  
 
-                with st.spinner('Processing...'):
+                with st.spinner('处理中...'):
                     if offline_mode == 'true':
                         comparison_result = get_csv_data(selected_use_case, 'simple_comparison')
                         # Simulate a wait time
@@ -621,7 +621,7 @@ def main():
 
                 st.markdown("---")
                 # Compare the responses and display the comparison  
-                st.subheader("Comparison of Responses - Detailed")  
+                st.subheader("响应比较 - 详细")  
 
                 with st.spinner('Processing...'):
                     if offline_mode == 'true':
