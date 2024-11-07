@@ -458,3 +458,4 @@ __pycache__/
 *.xsd.cs
 
 *.whl
+.aider*

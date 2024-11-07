@@ -326,43 +326,58 @@ def main():
     # Insurance section
     st.sidebar.header("保险")  
     if st.sidebar.button("家庭保险索赔 ⭐️", key="insurance_1"):
-        set_selected_item("家庭保险索赔")
+        # set_selected_item("家庭保险索赔")
+        set_selected_item("Home Insurance Claim")
     if st.sidebar.button("汽车保险索赔 ⭐️", key="insurance_2"):
-        set_selected_item("汽车保险索赔")
+        # set_selected_item("汽车保险索赔")
+        set_selected_item("Auto Insurance Claim")
     if st.sidebar.button("客户服务和保留", key="insurance_3"):
-        set_selected_item("客户服务和保留")
+        # set_selected_item("客户服务和保留")
+        set_selected_item("Customer Service and Retention")
     if st.sidebar.button("产品开发和创新", key="insurance_4"):
-        set_selected_item("产品开发和创新")
+        # set_selected_item("产品开发和创新")
+        set_selected_item("Product Development and Innovation")
     if st.sidebar.button("风险管理和合规", key="insurance_5"):
-        set_selected_item("风险管理和合规")
+        # set_selected_item("风险管理和合规")
+        set_selected_item("Risk Management and Compliance")
     st.sidebar.markdown("---")  
 
     # Banking section
     st.sidebar.header("银行")  
     if st.sidebar.button("信用风险评估和管理 ⭐️", key="banking_1"):
-        set_selected_item("信用风险评估和管理")
+        # set_selected_item("信用风险评估和管理")
+        set_selected_item("Credit Risk Assessment and Management")
     if st.sidebar.button("欺诈检测和预防", key="banking_2"):
-        set_selected_item("欺诈检测和预防")
+        # set_selected_item("欺诈检测和预防")
+        set_selected_item("Fraud Detection and Prevention")
     if st.sidebar.button("合规和报告", key="banking_3"):
-        set_selected_item("合规和报告")
+        # set_selected_item("合规和报告")
+        set_selected_item("Regulatory Compliance and Reporting")
     if st.sidebar.button("客户关系管理", key="banking_4"):
-        set_selected_item("客户关系管理")
+        # set_selected_item("客户关系管理")
+        set_selected_item("Customer Relationship Management")
     if st.sidebar.button("投资和投资组合管理", key="banking_5"):
-        set_selected_item("投资和投资组合管理")
+        # set_selected_item("投资和投资组合管理")
+        set_selected_item("Investment and Portfolio Management")
     st.sidebar.markdown("---") 
 
     # Retail section
     st.sidebar.header("零售")  
     if st.sidebar.button("库存和供应链管理", key="retail_1"):
-        set_selected_item("库存和供应链管理")
+        # set_selected_item("库存和供应链管理")
+        set_selected_item("Inventory and Supply Chain Management")
     if st.sidebar.button("商品和定价", key="retail_2"):
-        set_selected_item("商品和定价")
+        # set_selected_item("商品和定价")
+        set_selected_item("Merchandising and Pricing")
     if st.sidebar.button("客户细分和个性化", key="retail_3"):
-        set_selected_item("客户细分和个性化")
+        # set_selected_item("客户细分和个性化")
+        set_selected_item("Customer Segmentation and Personalization")
     if st.sidebar.button("全渠道和电子商务", key="retail_4"):
-        set_selected_item("全渠道和电子商务")
+        # set_selected_item("全渠道和电子商务")
+        set_selected_item("Omnichannel and E-commerce")
     if st.sidebar.button("忠诚度和保留", key="retail_5"):
-        set_selected_item("忠诚度和保留")
+        # set_selected_item("忠诚度和保留")
+        set_selected_item("Loyalty and Retention")
     st.sidebar.markdown("---")  
 
 
@@ -370,71 +385,96 @@ def main():
     # Utilities section
     st.sidebar.header("公用事业")  
     if st.sidebar.button("需求和供应管理", key="utilities_1"):
-        set_selected_item("需求和供应管理")
+        # set_selected_item("需求和供应管理")
+        set_selected_item("Demand and Supply Management")
     if st.sidebar.button("资产和网络管理", key="utilities_2"):
-        set_selected_item("资产和网络管理")
+        # set_selected_item("资产和网络管理")
+        set_selected_item("Asset and Network Management")
     if st.sidebar.button("客户服务和计费", key="utilities_3"):
-        set_selected_item("客户服务和计费")
+        # set_selected_item("客户服务和计费")
+        set_selected_item("Customer Service and Billing")
     if st.sidebar.button("能源效率和可持续性", key="utilities_4"):
-        set_selected_item("能源效率和可持续性")
+        # set_selected_item("能源效率和可持续性")
+        set_selected_item("Energy Efficiency and Sustainability")
     if st.sidebar.button("合规和报告", key="utilities_5"):
-        set_selected_item("合规和报告")
+        # set_selected_item("合规和报告")
+        set_selected_item("Regulatory Compliance and Reporting")
     st.sidebar.markdown("---")  
 
     # Mining section
     st.sidebar.header("采矿")  
     if st.sidebar.button("勘探和可行性", key="mining_1"):
-        set_selected_item("勘探和可行性")
+        # set_selected_item("勘探和可行性")
+        set_selected_item("Exploration and Feasibility")
     if st.sidebar.button("矿山规划和设计", key="mining_2"):
-        set_selected_item("矿山规划和设计")
+        # set_selected_item("矿山规划和设计")
+        set_selected_item("Mine Planning and Design")
     if st.sidebar.button("生产和加工", key="mining_3"):
-        set_selected_item("生产和加工")
+        # set_selected_item("生产和加工")
+        set_selected_item("Production and Processing")
     if st.sidebar.button("环境和社会影响", key="mining_4"):
-        set_selected_item("环境和社会影响")
+        # set_selected_item("环境和社会影响")
+        set_selected_item("Environmental and Social Impact")
     if st.sidebar.button("健康和安全", key="mining_5"):
-        set_selected_item("健康和安全")
+        # set_selected_item("健康和安全")
+        set_selected_item("Health and Safety")
     st.sidebar.markdown("---")  
 
     # Telecommunications section
     st.sidebar.header("电信")  
     if st.sidebar.button("网络规划和优化", key="telecom_1"):
-        set_selected_item("网络规划和优化")
+        # set_selected_item("网络规划和优化")
+        set_selected_item("Network Planning and Optimization")
     if st.sidebar.button("服务开发和创新", key="telecom_2"):
-        set_selected_item("服务开发和创新")
+        # set_selected_item("服务开发和创新")
+        set_selected_item("Service Development and Innovation")
     if st.sidebar.button("客户获取和保留", key="telecom_3"):
-        set_selected_item("客户获取和保留")
+        # set_selected_item("客户获取和保留")
+        set_selected_item("Customer Acquisition and Retention")
     if st.sidebar.button("计费和收入管理", key="telecom_4"):
-        set_selected_item("计费和收入管理")
+        # set_selected_item("计费和收入管理")
+        set_selected_item("Billing and Revenue Management")
     if st.sidebar.button("合规和报告", key="telecom_5"):
-        set_selected_item("合规和报告")
+        # set_selected_item("合规和报告")
+        set_selected_item("Regulatory Compliance and Reporting")
     st.sidebar.markdown("---")  
 
     # Healthcare section
     st.sidebar.header("医疗保健")  
     if st.sidebar.button("诊断和治疗", key="healthcare_1"):
-        set_selected_item("诊断和治疗")
+        # set_selected_item("诊断和治疗")
+        set_selected_item("Diagnosis and Treatment")
     if st.sidebar.button("护理协调和管理", key="healthcare_2"):
-        set_selected_item("护理协调和管理")
+        # set_selected_item("护理协调和管理")
+        set_selected_item("Care Coordination and Management")
     if st.sidebar.button("疾病预防和健康促进", key="healthcare_3"):
-        set_selected_item("疾病预防和健康促进")
+        # set_selected_item("疾病预防和健康促进")
+        set_selected_item("Disease Prevention and Health Promotion")
     if st.sidebar.button("研究和创新", key="healthcare_4"):
-        set_selected_item("研究和创新")
+        # set_selected_item("研究和创新")
+        set_selected_item("Research and Innovation")
     if st.sidebar.button("合规和报告", key="healthcare_5"):
-        set_selected_item("合规和报告")
+        # set_selected_item("合规和报告")
+        set_selected_item("Compliance and Reporting")
     st.sidebar.markdown("---")  
 
     # Education section
     st.sidebar.header("教育")  
     if st.sidebar.button("课程设计和交付", key="education_1"):
-        set_selected_item("课程设计和交付")
+        # set_selected_item("课程设计和交付")
+        set_selected_item("Curriculum Design and Delivery")
     if st.sidebar.button("评估和评价", key="education_2"):
-        set_selected_item("评估和评价")
+        # set_selected_item("评估和评价")
+        set_selected_item("Assessment and Evaluation")
     if st.sidebar.button("学生支持和参与", key="education_3"):
-        set_selected_item("学生支持和参与")
+        # set_selected_item("学生支持和参与")
+        set_selected_item("Student Support and Engagement")
     if st.sidebar.button("专业发展和协作", key="education_4"):
-        set_selected_item("专业发展和协作")
+        # set_selected_item("专业发展和协作")
+        set_selected_item("Professional Development and Collaboration")
     if st.sidebar.button("管理和管理", key="education_5"):
-        set_selected_item("管理和管理")
+        set_selected_item("Administration and Management")
+        # set_selected_item("管理和管理")
     st.sidebar.markdown("---")  
 
     
