@@ -50,7 +50,7 @@ def load_use_case_from_file(file_path):
 def get_csv_data(use_case,column_name):
     # Load the CSV file into a DataFrame
     csv_file_path = './o1-vs-4o-scenarios.csv'
-    df = pd.read_csv(csv_file_path, encoding='latin1')
+    df = pd.read_csv(csv_file_path, encoding='utf-8')
     row = df[df['Use Case'] == use_case]
     if not row.empty:
         return row.iloc[0][column_name]
@@ -68,7 +68,7 @@ def save_csv_data(use_case, column_name, value):
         if use_case in df['Use Case'].values:
             df.loc[df['Use Case'] == use_case, column_name] = value
             # Save the updated DataFrame back to the CSV file
-            df.to_csv(csv_file_path, index=False, encoding='latin1')
+            df.to_csv(csv_file_path, index=False, encoding='utf-8')
         else:
             return f"Error - Use case '{use_case}' not found."
 
