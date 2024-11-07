@@ -1,6 +1,7 @@
 Sector,Use Case,High Level,Scenario,Prompt,o1,gpt4o,Overview,simple_comparison,complex_comparison,o1_time,gpt4o_time
 Banking,Credit Risk Assessment and Management,,,"<purpose>Credit Risk Assessment</purpose>
 <instructions>
+  <instruction>Output in Chinese</instruction>
   <instruction>A bank is considering whether to approve a $200,000 mortgage loan for a customer who wants to buy a house. The bank has the following information about the customer:</instruction>
   <instruction>Review the customer's credit score, debt-to-income ratio, loan-to-value ratio, employment status, income, savings, other debts, and the house information</instruction>
   <instruction>Assign a rating for each criterion based on the customer and the house information</instruction>
@@ -231,6 +232,7 @@ Upon validation of these conditions, the bank can approve the loan given the req
 While both responses aim to assess the credit risk and make an approval decision, **Response 2** is superior due to its thoroughness, critical analysis, and cautious approach. It not only evaluates the necessary criteria but also identifies areas requiring further verification, ensuring that all potential risks are addressed before making a final decision. This comprehensive assessment demonstrates a higher level of expertise and professionalism, making **Response 2** the better response.",40.26,7.24
 Banking,Fraud Detection and Prevention,,"Hypothetical Example: O1 detects fraud by analyzing transactions in real-time, cross-referencing behaviors and patterns. For example, it identifies a suspicious sequence of ATM withdrawals in different cities within a short time period. Sample Prompt: ""Analyze recent transaction history and detect potential fraudulent behavior by identifying inconsistencies in location and spending patterns."" ","<purpose>Fraud Detection in Banking Transactions</purpose>
 <instructions>
+   <instruction>Output in Chinese</instruction>
     <instruction>Analyze the recent transaction history of a customer's account over the past month.</instruction>
     <instruction>Identify any anomalies or inconsistencies in transaction patterns, including unusual locations, amounts, times, or frequencies.</instruction>
     <instruction>Cross-reference transactions with known fraud patterns, such as rapid withdrawals from different locations, or transactions in high-risk areas.</instruction>
@@ -571,6 +573,7 @@ For a fraud detection report intended for internal review and action, Response 2
 Banking,Regulatory Compliance and Reporting,,"Hypothetical Example: O1 automates regulatory compliance by cross-checking transactions with updated global regulations such as anti-money laundering (AML) and privacy laws. It automatically flags suspicious accounts or transactions. Sample Prompt: ""Evaluate the compliance of these banking transactions with current AML regulations and flag any discrepancies."" ","<purpose>Automated AML Compliance Evaluation</purpose>
 
 <instructions>
+<instruction>Output in Chinese</instruction>
 <instruction>Review the provided transactions and customer profiles.</instruction>
 <instruction>Identify any transactions or accounts that violate AML regulations, such as structuring, high-risk countries, PEP involvement, unusual transaction amounts, etc.</instruction>
 <instruction>For each flagged transaction, explain which regulation it violates and why.</instruction>
@@ -844,6 +847,7 @@ Both responses aim to evaluate the compliance of six transactions with Anti-Mone
 While both responses aim to ensure AML compliance, **Response 2** demonstrates a more accurate and nuanced understanding of regulatory requirements. It offers balanced recommendations that align with legal obligations and best practices in compliance. By appropriately distinguishing between CTRs and SARs and emphasizing due diligence, Response 2 provides a superior evaluation that better serves the bank's compliance needs.",40.21,8.87
 Banking,Customer Relationship Management,,"Hypothetical Example: O1 helps banks personalize customer experiences by analyzing data from various touchpoints—purchase history, interactions, and customer service—to provide tailored product recommendations. Sample Prompt: ""Analyze customer behavior and recommend personalized banking services that could enhance loyalty for our top 10 clients."" ","<purpose>Customer Behavior Analysis and Personalized Service Recommendations</purpose>
 <instructions>
+  <instruction>Output in Chinese</instruction>
   <instruction>For each of the top 10 clients, analyze their transaction history, online banking interactions, customer service call logs, and demographic data collected over the past year.</instruction>
   <instruction>Identify key patterns, preferences, and anomalies in their behavior, including spending habits, product usage, support requests, and interaction frequencies.</instruction>
   <instruction>Segment the clients based on their behaviors and preferences into appropriate categories.</instruction>
@@ -1148,6 +1152,7 @@ In contrast, *Response 2* lacks depth in key areas, such as demographic details 
 *Response 1* is the superior response due to its detailed client profiles, structured analysis, tailored recommendations, and thorough consideration of compliance and ethical issues. It demonstrates a higher level of expertise and professionalism, making it more effective for analyzing customer behavior and providing personalized service recommendations. *Response 2* falls short in providing the same level of detail and specificity, which are essential for high-quality client advisory services.",40.21,8.87
 Banking,Investment and Portfolio Management,,"Hypothetical Example: O1 analyzes market trends, risk factors, and personal client goals to recommend an optimized investment strategy that balances risk and reward. Sample Prompt: ""Analyze current market trends and client risk tolerance, and recommend an optimal asset allocation strategy for a $2M portfolio."" ","<purpose>Investment Portfolio Optimization</purpose>
 <instructions>
+   <instruction>Output in Chinese</instruction>
     <instruction>Analyze the client's financial goals, risk tolerance, investment horizon, and current asset allocation.</instruction>
     <instruction>Review current market trends, economic indicators, and geopolitical risks.</instruction>
     <instruction>Consider the tax implications of different investment strategies.</instruction>
@@ -1413,6 +1418,7 @@ While both responses offer valuable insights and sound investment advice, **Resp
 Retail,Inventory and Supply Chain Management,,"Hypothetical Example: O1 predicts stock requirements by analyzing historical sales data, upcoming holidays, and even social media trends, ensuring optimal inventory levels are maintained. Sample Prompt: ""Based on the past year’s sales and upcoming seasonal trends, predict the inventory needs for winter clothing across all stores."" ","<purpose>Inventory Forecasting and Stock Optimization</purpose>
 
 <instructions>
+  <instruction>Output in Chinese</instruction>
   <instruction>Analyze the historical sales data for the past 3 years for winter clothing items across all stores and regions.</instruction>
   <instruction>Incorporate upcoming holidays, regional events, and marketing campaigns scheduled for the next three months into the demand forecast.</instruction>
   <instruction>Consider the impact of current social media trends, including hashtags, mentions, and influencer promotions, on specific winter clothing categories.</instruction>
@@ -2761,6 +2767,7 @@ An optimal response would combine the strengths of both:
 By integrating the detailed personalization and strategic rationale of Response 2 into the comprehensive structure of Response 1, the final report would more effectively address the task. It would ensure personalized, impactful incentives are proposed for all top 10 at-risk customers while fully utilizing the $50,000 budget to maximize retention efforts.",40.21,8.87
 Insurance,Home Insurance Claim,,,"<purpose>Insurance Claim Processing</purpose>
 <instructions>
+  <instruction>Output in Chinese</instruction> 
   <instruction>A customer files a claim for water damage to their basement caused by a burst pipe. The customer has a homeowners insurance policy that covers water damage from plumbing failures, subject to a $500 deductible and a $10,000 limit.</instruction>
   <instruction>Review the customer's claim form, along with photos of the damage, an estimate from a licensed contractor, and a copy of their policy declaration page.</instruction>
   <instruction>Assign a rating for each criterion based on the customer, policy, damaged, repair cost estimate and provided information</instruction>
@@ -3140,6 +3147,7 @@ Both responses address an insurance claim assessment and utilize a set of criter
 While both responses correctly identify the issues with the claim based on the assessment criteria, **Response 2** is superior due to its customer-focused approach, detailed explanations, and professional communication. It not only informs the policyholder of the claim status but also actively guides them on how to resolve outstanding issues. This approach is likely to result in higher customer satisfaction, better compliance with ethical standards, and a stronger overall relationship between the policyholder and the insurance company.",40.21,8.87
 Insurance,Auto Insurance Claim,,,"<purpose>Insurance Claim Evaluation</purpose>
 <instructions>
+  <instruction>Output in Chinese</instruction> 
   <instruction>Review the claimant's driving history, previous claims, and any past traffic violations.</instruction>
   <instruction>Analyze the damage reports for both vehicles involved, including repair estimates and descriptions of the damages.</instruction>
   <instruction>Consider the weather conditions at the time and location of the accident.</instruction>
@@ -3648,6 +3656,7 @@ By addressing the complexities of the case with detailed evidence and reasoning,
 **Recommendation:** Adopt the approach exemplified in Response 2 for complex claim evaluations to enhance accuracy, professionalism, and stakeholder satisfaction.",40.21,8.87
 Insurance,Customer Service and Retention,,"Hypothetical Example: O1 helps insurance companies retain customers by analyzing their interactions and claim histories, predicting when they might leave, and offering personalized retention strategies. Sample Prompt: ""Identify customers likely to switch providers based on their claim history, and suggest targeted retention strategies."" ","<purpose>Customer Retention Analysis</purpose>
 <instructions>
+  <instruction>Output in Chinese</instruction> 
   <instruction>Analyze the customer data to identify customers who are at risk of switching to another insurance provider.</instruction>
   <instruction>Consider factors such as claim history, customer interactions, policy characteristics, and demographics.</instruction>
   <instruction>Assign a risk score to each customer based on these factors.</instruction>
@@ -3985,6 +3994,7 @@ Both responses provide a customer retention analysis involving risk score assign
 Response 2 distinguishes itself through thorough analysis, personalized recommendations, and careful compliance considerations. Its detailed explanations and strategic depth make it a more effective and professional response compared to Response 1. The critical thinking applied in Response 2 is more likely to result in successful customer retention and demonstrates a higher level of expertise.",40.21,8.87
 Insurance,Product Development and Innovation,,"Hypothetical Example: O1 identifies gaps in the insurance market by analyzing consumer feedback, competitor products, and market trends to design new policies, such as usage-based insurance. Sample Prompt: ""Analyze market feedback and suggest innovative new insurance products that could appeal to younger customers."" ","<purpose>Innovative Insurance Product Development</purpose>
 <instructions>
+  <instruction>Output in Chinese</instruction> 
   <instruction>Analyze the provided market feedback, customer preferences, and competitor offerings to identify gaps in the current insurance market.</instruction>
   <instruction>Use the data to suggest three innovative insurance products that would appeal to customers aged 18-35.</instruction>
   <instruction>For each suggested product, provide a detailed description, including features, benefits, and how it addresses the identified market gaps.</instruction>
@@ -4566,6 +4576,7 @@ Response 2's recommendations are more actionable and detailed, allowing for clea
 Response 2 is notably better than Response 1 due to its comprehensive and detailed evaluation of Alpha Insurance Co.'s compliance status. It demonstrates a higher level of expertise by identifying specific regulatory requirements, assessing exact gaps in current practices, and providing actionable recommendations with justified prioritization and effort estimations. Response 1, while organized and concise, lacks the depth and specificity necessary for effective compliance planning.",40.21,8.87
 Utilities,Demand and Supply Management,,"Hypothetical Example: O1 predicts electricity demand by analyzing past usage patterns, weather data, and social factors, ensuring optimal energy generation and supply. Sample Prompt: ""Predict electricity demand for the next month, factoring in historical usage patterns, upcoming weather forecasts, and local events."" ","<purpose>Electricity Demand Prediction and Resource Optimization</purpose>
 <instructions>
+  <instruction>Output in Chinese</instruction> 
   <instruction>Analyze historical electricity usage data for the past five years from various regions within the city.</instruction>
   <instruction>Incorporate upcoming weather forecasts including temperature, humidity, and expected extreme weather events.</instruction>
   <instruction>Consider scheduled local events such as festivals, sports games, and public holidays which may affect electricity consumption.</instruction>
@@ -5323,6 +5334,7 @@ Both responses address the task of developing a predictive maintenance schedule 
 Response 2 stands out due to its specificity, practical recommendations, and actionable plan. It effectively translates data analysis into concrete steps, prioritizing assets based on quantified risk and impact. This makes it more valuable for implementation purposes compared to the general framework provided in Response 1.",40.21,8.87
 Utilities,Customer Service and Billing,,"Hypothetical Example: O1 improves customer satisfaction by integrating billing data, consumption history, and customer preferences to create more personalized bills and services. Sample Prompt: ""Based on customer energy consumption patterns, recommend personalized billing solutions to enhance satisfaction."" ","<purpose>Personalized Energy Billing Solutions</purpose>
 <instructions>
+    <instruction>Output in Chinese</instruction> 
     <instruction>Analyze the energy consumption patterns of the customers based on the provided data.</instruction>
     <instruction>Identify customer segments with similar usage profiles and preferences.</instruction>
     <instruction>Recommend personalized billing plans for each customer segment that optimize both customer satisfaction and company profitability.</instruction>
@@ -5609,6 +5621,7 @@ Both responses provide an analysis of customer data and offer personalized billi
 Response 2's lack of specific financial details is a significant drawback, as it hinders the ability to assess the feasibility and profitability of the recommendations. While it shows awareness of company policies and regulatory compliance, it falls short in translating this into practical, customer-specific plans. Response 1, conversely, strikes a balance between compliance, customer satisfaction, and profitability, offering a more effective and implementable set of recommendations.",40.21,8.87
 Utilities,Energy Efficiency and Sustainability,,"Hypothetical Example: O1 promotes energy efficiency by suggesting optimal energy usage schedules for households, considering peak demand times and renewable energy availability. Sample Prompt: ""Recommend energy-saving schedules for residential customers based on peak demand times and available renewable energy resources."" ","<purpose>Energy Consumption Optimization</purpose>
 <instructions>
+    <instruction>Output in Chinese</instruction> 
     <instruction>Analyze the electricity consumption patterns of a residential neighborhood over the past month, using the provided data.</instruction>
     <instruction>Identify peak demand times and periods of high renewable energy availability.</instruction>
     <instruction>Determine the appliances and systems in each household that can be scheduled flexibly without impacting residents' comfort.</instruction>
@@ -5959,6 +5972,7 @@ Both responses aim to provide an ""Energy Consumption Optimization Report"" for 
 By addressing the shortcomings of Response 1 and enhancing the report with actionable insights and comprehensive planning, **Response 2** stands out as the more effective and practical response for optimizing energy consumption in the residential neighborhood.",40.21,8.87
 Utilities,Regulatory Compliance and Reporting,,"Hypothetical Example: O1 ensures regulatory compliance by continuously monitoring operational data against changing environmental and safety regulations, reducing the risk of fines. Sample Prompt: ""Monitor our energy generation processes and ensure they comply with current environmental and safety regulations, suggesting areas of improvement."" ","<purpose>Regulatory Compliance Monitoring</purpose>
 <instructions>
+    <instruction>Output in Chinese</instruction> 
     <instruction>Analyze the operational data of our energy generation facilities for the past quarter.</instruction>
     <instruction>Identify any areas where we may be non-compliant with the latest environmental and safety regulations, including but not limited to emissions standards, waste disposal protocols, and worker safety guidelines.</instruction>
     <instruction>Cross-reference our data with the following regulations and standards:
@@ -6529,6 +6543,7 @@ Both responses aim to evaluate the feasibility of a mining operation at Location
 *Response 2* is markedly better due to its rigorous quantitative analysis, detailed cost considerations, and practical approach to risk mitigation and project implementation. It provides a solid foundation for decision-making by accurately projecting profitability and outlining a clear path forward. In contrast, *Response 1* offers a more superficial assessment that could lead to misleading conclusions about the project's viability.",40.21,8.87
 Mining,Mine Planning and Design,,"Hypothetical Example: O1 optimizes mine layout and extraction methods by analyzing geological structures, equipment availability, and safety regulations, ensuring efficient and safe extraction. Sample Prompt: ""Design an optimal mine layout that maximizes extraction efficiency while adhering to safety regulations and environmental constraints."" ","<purpose>Mining Operations Optimization</purpose>
 <instructions>
+  <instruction>Output in Chinese</instruction> 
   <instruction>Analyze the geological survey data to identify the most resource-rich areas within the mining site.</instruction>
   <instruction>Evaluate equipment availability and assign suitable machines to extraction tasks based on their capabilities and the terrain.</instruction>
   <instruction>Ensure compliance with safety regulations, including minimum distances between active mining zones and adherence to maximum allowed depths.</instruction>
@@ -6954,7 +6969,7 @@ Both responses aim to develop an optimized mine layout plan that maximizes resou
 
 Response 1 is the superior plan due to its balanced approach, demonstrating a thorough understanding of operational constraints, financial management, and strategic resource extraction. It provides a clear, actionable roadmap that aligns with all given constraints, making it more feasible and practical for implementation.",40.21,8.87
 Mining,Production and Processing,,"Hypothetical Example: O1 monitors production levels and processing efficiency, identifying bottlenecks in real-time and recommending process improvements to maximize output. Sample Prompt: ""Analyze current production data and identify process improvements to increase ore extraction and processing efficiency."" ","<purpose>Mining Operation Efficiency Analysis</purpose>
-<instructions>
+<istructions>
 - Analyze the production data from the past month for the XYZ mining facility, which extracts ore from multiple shafts and processes it through several crushers and mills.
 - Identify any bottlenecks in the extraction and processing workflows.
 - Recommend specific process improvements to increase overall ore extraction and processing efficiency by at least 15%.
@@ -7562,6 +7577,7 @@ Overall, **Response 1** is the superior response due to its comprehensive covera
 Mining,Health and Safety,,"Hypothetical Example: O1 proactively identifies potential safety hazards by analyzing equipment performance, employee health data, and environmental conditions in the mine, ensuring a safer work environment. Sample Prompt: ""Using employee health and equipment data, predict potential safety hazards in the mine and recommend strategies to reduce accidents."" ","<purpose>Mine Safety Hazard Prediction and Prevention</purpose>
 
 <instructions>
+<instruction>Output in Chinese</instruction>
 <instruction>Analyze the provided equipment performance data, employee health records, and environmental conditions in the mine over the past six months.</instruction>
 <instruction>Identify patterns and correlations that may indicate potential safety hazards.</instruction>
 <instruction>Prioritize the identified hazards based on their risk level and likelihood of occurrence.</instruction>
@@ -7965,6 +7981,7 @@ To improve **Response 1**, the following enhancements are recommended:
 By addressing these areas, **Response 1** can become more effective and align closer with the thoroughness exhibited in **Response 2**.",40.21,8.87
 Telecommunications,Network Planning and Optimization,,"Hypothetical Example: O1 optimizes network coverage by analyzing customer demand, urban development, and infrastructure needs, ensuring efficient resource allocation for 5G deployment. Sample Prompt: ""Design an optimized 5G network deployment plan for urban areas based on population growth, current infrastructure, and consumer data usage patterns."" ","<purpose>5G Network Deployment Planning</purpose>
 <instructions>
+  <instruction>Output in Chinese</instruction>
   <instruction>Analyze the current 4G LTE network infrastructure and identify areas with capacity constraints based on current usage patterns and projected demand growth over the next five years.</instruction>
   <instruction>Consider urban development plans, including residential, commercial, and industrial zones that are expected to expand or emerge in the next five years.</instruction>
   <instruction>Review regulatory constraints, including zoning laws, environmental regulations, and any restrictions on antenna placements.</instruction>
@@ -8349,6 +8366,7 @@ Both responses aim to develop a comprehensive 5G network deployment plan, consid
 While both responses address the fundamental aspects of 5G network deployment, **Response 2** stands out as the superior plan due to its detailed financial analysis, structured deployment phases, comprehensive risk assessment, and actionable recommendations. It provides a holistic approach that balances technical requirements, financial viability, strategic prioritization, and operational execution. These elements make Response 2 more effective in guiding decision-makers through the complex process of 5G network deployment, ensuring a higher likelihood of success and maximized returns on investment.",40.21,8.87
 Telecommunications,Service Development and Innovation,,"Hypothetical Example: O1 analyzes customer feedback, competitor services, and technological trends to recommend new telecom services like IoT and cloud offerings. Sample Prompt: ""Based on market trends and customer feedback, recommend innovative telecom services that can cater to the rising demand for IoT in smart cities."" ","<purpose>Telecom Service Innovation Analysis</purpose>
 <instructions>
+    <instruction>Output in Chinese</instruction>
     <instruction>Analyze the customer feedback data from the past year, focusing on requests and complaints related to emerging technologies.</instruction>
     <instruction>Examine competitor offerings in the IoT, 5G, and cloud service domains, identifying gaps and strengths.</instruction>
     <instruction>Assess technological trends in smart cities, including adoption rates, government initiatives, and potential market growth.</instruction>
@@ -8608,6 +8626,7 @@ However, **Response 1** could be strengthened by including specific budget figur
 Telecommunications,Customer Acquisition and Retention,,"Hypothetical Example: O1 predicts which customers are likely to switch providers and recommends personalized offers to retain them, based on their usage patterns, billing history, and feedback. Sample Prompt: ""Identify customers at risk of leaving and suggest personalized offers or discounts to retain them based on their usage and billing history."" ","<purpose>Customer Churn Prediction and Retention Strategy</purpose>
 
 <instructions>
+  <instruction>Output in Chinese</instruction> 
   <instruction>Analyze the customer dataset provided, which includes usage patterns, billing history, customer feedback, and support interactions.</instruction>
   <instruction>Identify customers who are at high risk of churning (leaving the company) within the next month.</instruction>
   <instruction>For each at-risk customer, determine the underlying reasons for their potential churn, based on the data.</instruction>
@@ -8988,6 +9007,7 @@ While **Response 2** provides a deeper analysis of policy compliance and expecte
 By critically analyzing both responses, it is clear that thoroughness in identifying at-risk customers is paramount. Policy compliance and strategic foresight are also crucial, but they cannot compensate for missing key customer segments in the analysis.",40.21,8.87
 Telecommunications,Billing and Revenue Management,,"Hypothetical Example: O1 automates billing by analyzing customer usage data, pricing plans, and tariffs, identifying potential revenue leakage and recommending adjustments to pricing strategies. Sample Prompt: ""Analyze current billing data and identify potential revenue leakage while suggesting tariff adjustments to maximize profitability."" ","<purpose>Billing Analysis and Revenue Optimization</purpose>
 <instructions>
+  <instruction>Output in Chinese</instruction>
   <instruction>Analyze the billing data of XYZ Telecom's customers for the past six months.</instruction>
   <instruction>Identify any anomalies or patterns that suggest potential revenue leakage.</instruction>
   <instruction>Review current pricing plans and tariff structures.</instruction>
@@ -9194,6 +9214,7 @@ In contrast, Response 1, while well-structured and focused on customer satisfact
 Response 2 is the stronger of the two responses. It demonstrates a deep understanding of the billing data, identifies critical issues with significant financial implications, and provides actionable recommendations supported by quantifiable benefits. Implementing the strategies from Response 2 is likely to lead to substantial revenue recovery, improved customer satisfaction, and enhanced operational efficiency for XYZ Telecom.",40.21,8.87
 Telecommunications,Regulatory Compliance and Reporting,,"Hypothetical Example: O1 ensures compliance by continuously monitoring changes in telecommunications regulations and automatically flagging areas where the company might fall short, such as spectrum licensing or consumer protection laws. Sample Prompt: ""Evaluate our current practices and ensure compliance with the latest telecommunications regulations, such as privacy laws and spectrum licensing."" ","<purpose>Compliance Evaluation</purpose>
 <instructions>
+  <instruction>Output in Chinese</instruction>
   <instruction>Review the company's practices in customer data handling, spectrum usage, and emergency services.</instruction>
   <instruction>Compare these practices with the latest telecommunications regulations, including GDPR, CCPA, FCC spectrum licensing guidelines, and obligations for emergency call services (e.g., E911).</instruction>
   <instruction>Identify areas where the company's practices may not comply with current regulations.</instruction>
@@ -9639,6 +9660,7 @@ Both responses provide a compliance evaluation report addressing the company's p
 By being more detailed and offering practical implementation strategies, Response 2 adds significant value over Response 1, making it the more effective and helpful report for the company.",40.21,8.87
 Healthcare,Diagnosis and Treatment,,"Hypothetical Example: O1 helps doctors diagnose rare diseases by cross-referencing patient symptoms with the latest medical research and historical patient data, providing accurate treatment recommendations. Sample Prompt: ""Based on patient symptoms and medical history, suggest potential diagnoses and treatment plans, referencing the latest research on similar cases."" ","<purpose>Rare Disease Diagnosis Assistant</purpose>
 <instructions>
+  <instruction>Output in Chinese</instruction>
   <instruction>Analyze the patient's symptoms, medical history, laboratory results, and genetic data.</instruction>
   <instruction>Cross-reference the patient's data with the latest medical research articles, clinical trials, and case studies.</instruction>
   <instruction>Identify potential rare diseases that match the patient's profile, considering differential diagnoses.</instruction>
@@ -10172,6 +10194,7 @@ Both responses aim to provide an optimized care pathway for John Doe by scheduli
 **Response 2** is superior due to its comprehensive and patient-centered approach. It demonstrates a higher level of detail in planning, considers the patient's availability and personal commitments, optimizes appointment scheduling to reduce inconvenience, and provides clear action steps for insurance authorization and prescription management. This response is more likely to result in an efficient, stress-free experience for John Doe while ensuring all medical needs are appropriately addressed.",40.21,8.87
 Healthcare,Disease Prevention and Health Promotion,,"Hypothetical Example: O1 identifies at-risk populations for chronic diseases by analyzing patient data and socio-economic factors, recommending preventive care and health education programs. Sample Prompt: ""Identify populations at high risk for diabetes based on socio-economic data and patient records, and recommend preventive care measures."" ","<purpose>Chronic Disease Risk Assessment and Intervention Planning</purpose>
 <instructions>
+  <instruction>Output in Chinese</instruction>
   <instruction>Analyze the provided patient health records and socio-economic data to identify populations at high risk for diabetes and hypertension over the next five years.</instruction>
   <instruction>Use the risk assessment model outlined below to compute risk scores for each individual.</instruction>
   <instruction>Aggregate the individual risk scores to identify high-risk populations based on geography, age, gender, and socio-economic status.</instruction>
@@ -10600,6 +10623,7 @@ For **Response 1** to enhance its effectiveness:
 In summary, Response 2 stands out for its thoroughness, attention to detail, and strategic planning. It provides a clear roadmap from analysis to execution, backed by measurable goals and monitoring plans. These elements are crucial for the successful implementation of public health interventions aimed at reducing chronic disease risks.",40.21,8.87
 Healthcare,Research and Innovation,,"Hypothetical Example: O1 accelerates medical research by analyzing clinical trial data, research papers, and patient outcomes to recommend new treatment methods or identify gaps in current research. Sample Prompt: ""Analyze clinical trial data on a new cancer drug and suggest potential areas for further research based on patient outcomes and related studies."" ","<study>Comprehensive Analysis of Clinical Trial Data for Drug XZT-101</study>
 <instructions>
+<instruction>Output in Chinese</instruction>
 <instruction>An international, randomized, double-blind, placebo-controlled Phase III clinical trial was conducted across 50 centers to evaluate the efficacy and safety of the investigational drug XZT-101 in combination with standard chemotherapy compared to standard chemotherapy alone in patients with Stage IIIb/IV non-small cell lung cancer (NSCLC).</instruction>
 <instruction>As a data scientist in the medical research team, you are provided with the following synthetic datasets: patient demographics, baseline characteristics, genetic profiles, treatment regimens, adverse events, laboratory results, imaging studies, progression-free survival (PFS), overall survival (OS), and quality of life metrics.</instruction>
 <instruction>Perform a comprehensive analysis to:</instruction>
@@ -10803,6 +10827,7 @@ Response 2 falls short because:
 In summary, Response 1 is superior due to its comprehensive analysis, detailed data presentation, critical insight, and professional formatting. It reflects the qualities expected of an expert reviewer. In contrast, Response 2 is inadequate, lacking detail, specificity, and critical engagement, making it less effective and informative.",40.21,8.87
 Healthcare,Compliance and Reporting,,"Hypothetical Example: O1 monitors healthcare providers’ adherence to regulations like HIPAA or GDPR, flagging any non-compliance issues and ensuring timely reporting to regulatory bodies. Sample Prompt: ""Evaluate our current healthcare practices and ensure compliance with HIPAA regulations, flagging any areas where we may be at risk."" ","<purpose>Healthcare Compliance Audit</purpose>
 <instructions>
+  <instruction>Output in Chinese</instruction>
   <instruction>Analyze the provided patient data handling procedures and identify any potential violations of HIPAA regulations.</instruction>
   <instruction>Review the data flow diagrams, access controls, and data storage policies.</instruction>
   <instruction>Identify areas where Protected Health Information (PHI) may be at risk.</instruction>
@@ -11453,6 +11478,7 @@ In contrast, Response 2 lacks personalization and structure. The questions are p
 Overall, Response 1 is more effective in supporting Alex's learning journey due to its thoughtful design and personalized approach.",40.21,8.87
 Education,Student Support and Engagement,,"Hypothetical Example: O1 identifies students at risk of disengagement by analyzing their participation, grades, and extracurricular activities, and recommends targeted interventions to re-engage them. Sample Prompt: ""Identify students who are at risk of disengagement based on their participation and academic performance, and recommend interventions to increase their motivation."" ","<purpose>Student Engagement Risk Analysis and Intervention Planning</purpose>
 <instructions>
+    <instruction>Output in Chinese</instruction>
     <instruction>Analyze the provided student data to identify students who are at risk of disengagement.</instruction>
     <instruction>Consider factors such as attendance, grades, participation in class, extracurricular activities, social interactions, and behavioral indicators.</instruction>
     <instruction>Assign a risk level to each student (Low, Medium, High) based on the analysis.</instruction>
@@ -11785,6 +11811,7 @@ In contrast, Response 2 falls short by providing an oversimplified overview with
 For an effective student engagement risk analysis, it's crucial to offer detailed assessments, transparent methodologies, and tailored interventions—elements that Response 1 successfully delivers. Response 2's lack of specificity and depth reduces its value as a tool for meaningful action. Therefore, Response 1 is the superior response, providing a comprehensive and practical framework for supporting student success.",40.21,8.87
 Education,Professional Development and Collaboration,,"Hypothetical Example: O1 recommends professional development courses for educators based on their teaching history, areas of improvement, and peer collaboration needs. Sample Prompt: ""Recommend professional development courses for a teacher looking to improve their technology integration skills in the classroom."" ","<purpose>Personalized Professional Development Plan</purpose>
 <instructions>
+  <instruction>Output in Chinese</instruction>
   <instruction>Review the teacher's teaching history, student performance data, peer evaluations, and self-assessment reports.</instruction>
   <instruction>Identify areas of strength and areas for improvement.</instruction>
   <instruction>Recommend professional development courses and workshops that align with the teacher's improvement areas and career goals.</instruction>
