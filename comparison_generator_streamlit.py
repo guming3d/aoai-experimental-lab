@@ -49,7 +49,7 @@ def load_use_case_from_file(file_path):
     
 def get_csv_data(use_case,column_name):
     # Load the CSV file into a DataFrame
-    csv_file_path = './o1-vs-4o-scenarios.csv'
+    csv_file_path = './o1-vs-4o-scenarios-cn.csv'
     df = pd.read_csv(csv_file_path, encoding='utf-8')
     row = df[df['Use Case'] == use_case]
     if not row.empty:
@@ -61,7 +61,7 @@ def save_csv_data(use_case, column_name, value):
     # Check if debug_mode is true
     if os.getenv('debug_mode') == 'true':
         # Load the CSV file into a DataFrame
-        csv_file_path = './o1-vs-4o-scenarios.csv'
+        csv_file_path = './o1-vs-4o-scenarios-cn.csv'
         df = pd.read_csv(csv_file_path)
         
         # Check if the use case already exists
